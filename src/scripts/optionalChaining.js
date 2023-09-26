@@ -67,7 +67,7 @@ document.querySelectorAll('.item').forEach(element => {
         </tr>
         <tr>
           <td><b>Veículo</b></td>
-          <td>${hero.transportation?.name}</td>
+          <td>${hero.transportation?.name ?? 'Não há dados'}</td>
         </tr>
       </tbody>
     </table>
@@ -75,13 +75,3 @@ document.querySelectorAll('.item').forEach(element => {
   })
 })
 
-const batman = {
-  name: "Batman",
-  powers: ["Inteligência", "Habilidade em artes marciais", "Tecnologia avançada"],
-  secretIdentity: {
-    name: "Bruce Wayne",
-    occupation: "Empresário",
-  }
-}
-
-console.log(batman.sidekick?.name)
